@@ -136,7 +136,7 @@ git push -u origin main
 ***
 
 ```python
-ptint("hello world")
+print("hello world")
 ```
 
 ```javascript
