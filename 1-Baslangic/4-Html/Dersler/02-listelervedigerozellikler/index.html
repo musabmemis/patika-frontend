@@ -7,7 +7,8 @@
   > icinde oge
   ^ yukari cik ve oge olustur
   * carp -> p*3
-  lorem??
+  lorem?? -> çok uzun yazı
+  lorem4 -> 4 kelime türetir
   . -> class 
   # -> id
 
@@ -17,8 +18,39 @@
 <!-- h1+p+p+h2+p+p+p+p -> h1+p*2+h2^+p*4 -->
 <!-- ul>li*5 -->
 <!-- ul>li*3^p*2+h2 -->
+<!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1 -- hatali -- -->
+<!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
 
 
+<ul>
+  <li>Lorem.</li>
+  <li>Nobis.</li>
+  <li>Dolore?</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Deserunt voluptatem tempora molestiae?</p>
+<h3>Lorem.</h3>
+
+<h3 class="deneme">Lorem.</h3>
+<!-- h3.deneme>lorem1 -->
+
+<h3 id="idolussun">Lorem.</h3>
+<!-- h3#idolussun>lorem1 -->
+
+<h3 class="deneme" id="idolussun">Lorem.</h3>
+<!-- h3.deneme#idolussun>lorem1 -->
+
+<h3 class="kodluyoruz html"></h3>
+
+<ul>
+  <li class="tepki"></li>
+</ul>
+
+<ul>
+  <li class="text-red"></li>
+  <li class="text-red"></li>
+  <li class="text-red"></li>
+</ul>
 
 <h2>Listeler</h2>
 <!--
