@@ -1,0 +1,171 @@
+<h1>HTML</h1>
+
+<p>
+  Lorem ipsum, <strong>dolor sit</strong> 
+  amet <em>consectetur</em> adipisicing elit.  <a href="#">Officia,id</a>.
+</p>
+<!-- <strong>dolor sit</strong> -> dolor sit yazısını koyu yaptı -->
+<!-- <em>consectetur</em> -> italic yazı -->
+<p>span:
+  Lorem ipsum dolor <strong>sit amet consectetur </strong>
+  <span style="color:red"> adipisicing elit.</span> Perspiciatis, tempore.
+</p>
+<p>
+  <strong>
+    <em>
+      Lorem, ipsum dolor sit
+    </em>
+  </strong> amet consectetur
+  adipisicing elit. Saepe, quos?
+</p>
+<h2>
+  <a href="#">BLOCK ELEMENT</a>
+</h2>
+<hr>
+<div>
+  <h2>Linklerle calismak</h2>
+  <!-- 
+    - baska bir web sitesine 
+    - aynı sayfa içinde bir yere
+    - baska bir sayfaya git
+    - mail at
+    - telefon et
+    href=""
+  -->
+
+  <ul>
+    <li>
+      <a href="https://kodluyoruz.org" target="_blank">
+        Kodluyoruz sayfasına gidilecek
+      </a>
+      <!--  <a href=""></a> -> link olusturma -->
+      <!--
+      <a href=""><target="_blank"/a> -> link olusturma + yeni sekmede acma 
+      -->
+    </li>
+    <li>
+      <a href="iletisim.html"> İletisim sayfasina git </a>
+    </li>
+    <li>
+  <a href="#footer">
+    en asagi git
+  </a>
+    <li>
+      <a href="mailto:info@kodluyoruz.org">
+        Kodluyoruz'a mail at
+      </a>
+    </li>
+    <li>
+      <a href="tel:02129878778">
+        Telefon ac
+      </a>
+    </li>
+    </li>
+  </ul>
+</div>
+<!-- <br> -> bir alt satira gec -->
+<hr>
+<h2>Görsellerle calismak</h2>
+
+<!-- img -->
+<a href="https://picsum.photos" target="_blank">
+  <img src="images/1.jpg" alt="ilk resim" />
+</a>
+<img
+src=https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cGljfGVufDB8fDB8fA%3D%3D&w=1000&q=80""
+alt=gorsel"">
+<img src="https://www.pics4learning.com/images/pics-banner1-850.jpg" alt="" />
+<img src="https://picsum.photos/200/600" alt="bisey" />
+<hr>
+<h2>Emmet / Zen coding</h2>
+
+<!-- etiket isimlerini direk verebiliyoruz
+  + kardes oge 
+  > icinde oge
+  ^ yukari cik ve oge olustur
+  * carp -> p*3
+  lorem?? -> çok uzun yazı
+  lorem4 -> 4 kelime türetir
+  . -> class 
+  # -> id
+
+-->
+
+<!-- h1+p+p+h2+p+p+p+p -->
+<!-- h1+p+p+h2+p+p+p+p -> h1+p*2+h2^+p*4 -->
+<!-- ul>li*5 -->
+<!-- ul>li*3^p*2+h2 -->
+<!-- ul>li*3>lorem1^p*2>lorem4+h3>lorem1 -- hatali -- -->
+<!-- ul>li*3>lorem1^^p*2>lorem4^h3>lorem1 -->
+
+<ul>
+  <li>Lorem.</li>
+  <li>Nobis.</li>
+  <li>Dolore?</li>
+</ul>
+<p>Lorem ipsum dolor sit.</p>
+<p>Deserunt voluptatem tempora molestiae?</p>
+<h3>Lorem.</h3>
+
+<h3 class="deneme">Lorem.</h3>
+<!-- h3.deneme>lorem1 -->
+
+<h3 id="idolussun">Lorem.</h3>
+<!-- h3#idolussun>lorem1 -->
+
+<h3 class="deneme" id="idolussun">Lorem.</h3>
+<!-- h3.deneme#idolussun>lorem1 -->
+
+<h3 class="kodluyoruz html"></h3>
+
+<ul>
+  <li class="tepki"></li>
+</ul>
+
+<ul>
+  <li class="text-red"></li>
+  <li class="text-red"></li>
+  <li class="text-red"></li>
+</ul>
+<hr>
+<h2>Listeler</h2>
+<!--
+    sıralı listeler -> 1,2,3 ordered list ? -> ol
+    sıralı olmayan listeler -> *,*,* unordered list -> ul 
+    -> list item -> li
+-->
+
+<ol>
+  <li>liste öğesi *1*</li>
+  <li>liste öğesi *2*</li>
+
+  <li>:liste öğesi *3*</li>
+</ol>
+
+<ul>
+  <li>liste öğesi *1*</li>
+  <li>liste öğesi *2*</li>
+  <li>liste öğesi *3*</li>
+</ul>
+
+<ol type="I">
+  <li>Javascript</li>
+  <li>C#</li>
+  <li>Php</li>
+</ol>
+
+<ol type="A">
+  <li>Javascript</li>
+  <li>C#</li>
+  <li>Php</li>
+</ol>
+
+<ul style="list-style-type: square">
+  <li>Telefon</li>
+  <li>Bilgisayar</li>
+  <li>Yazici</li>
+</ul>
+<hr>
+<h2 id="footer">En alt kisim</h2>
+
+<p>Lorem ipsum dolor sit amet.</p>
