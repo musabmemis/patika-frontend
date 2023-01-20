@@ -14,17 +14,44 @@
         #malzeme
         {
             color: red;
-            font-size: 20px;
+            display: block;
+            margin-top: 30px;
+            margin-left: 30%;
+            font-size: large;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: brown;
         }
         #nasıl
         {
+            font-size: large;
             color: red;
-            font-size: 20px;
-            margin-left: ;
+            display: block;
+            margin-top: 30px;
+            margin-left: 30%;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: brown;
         }
+        
+        article
+        {
+            display: block;
+            margin-top: 30px;
+            margin-left: 30%;
+        }
+        #afiyet
+        {
+            font-size: large;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 30%;
+        }
+
     </style>
 </head>
 <body>
+    
     <!-- header start -->
 <h1><span style="color:orangered"> ...Mayasız Üçgen Hamur Kızartması...</span></h1>
 <p>15 dakikada mayasız üçgen hamur kızartması;</p>
@@ -32,15 +59,16 @@
 <p>yapımı kolay bir o kadarda lezzetli bir tarif mutlaka kaydedip deneyin.</p>
     <!-- header end -->
     <!-- content start -->
+    <section>
         <!-- article start -->
        <article>
         <p>
-            <ins><b style="color:darkgreen">Pişirme süresi</b>: 12 dk</ins>
-            <ins><b style="color:darkgreen">Hazırlama süresi</b>: 25 dk</ins>
-            <ins><b style="color:darkgreen">Kaç kişilik</b>: 5 kişilik</ins>
+            <ins><b style="color:darkgreen">Pişirme Süresi</b>: 12 dk</ins> &nbsp;  
+            <ins><b style="color:darkgreen">Hazırlama Süresi</b>: 25 dk</ins> &nbsp; 
+            <ins><b style="color:darkgreen">Kaç Kişilik</b>: 5 kişilik</ins> &nbsp; 
         </p>
        </article>
-        <p id="malzeme">Malzemeler</p>
+        <p id="malzeme"><ins><b>Malzemeler</b></ins> </p>
         <article>
             <ul>
                 <li>2 adet yumurta</li>
@@ -50,7 +78,7 @@
                 <li>1 çay bardağı beyaz peynir</li>
             </ul>
         </article>
-        <p id="nasıl">Nasıl Yapılır?</p>
+        <p id="nasıl"><ins><b>Nasıl Yapılır?</b></ins></p>
        <article>
         <ol>
             <li>Yumurta, süt ve tuzu yoğurma kabına alın karıştırın.</li>
@@ -61,9 +89,10 @@
             <li>Sıvı yağ koyup kizdirdigimiz tavada önlü arkalı kızartın.</li>
         </ol>
        </article>
-       <article>
-        <p><em><b>Afiyet Olsun</b></em></p>
-       </article>
+    </section>
+       
+        <p id="afiyet" ><em><b>Afiyet Olsun</b></em></p>
+       
         <!-- article end -->
     <!-- content end -->
     <!-- footer start -->
