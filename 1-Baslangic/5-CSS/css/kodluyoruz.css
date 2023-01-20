@@ -1,8 +1,21 @@
+/************** Layout ************/
+
+    /* aciklama satiri */
+
+/************** Layout ************/
+body
+{
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    color:blue;
+    
+}
 h2{
     color:red; 
     font-size:74px;
+    text-transform: uppercase;
 }
 p{
-    color:green; 
+    font-family: 'Lobster', cursive;
     font: size 30px;
 }
