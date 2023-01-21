@@ -1,21 +1,19 @@
 body {
-    
+    text-align: center;
+    list-style-position: inside
     
    }
 h1{
     color: rgb(36, 104, 104);
-    font-size: 50px;
-}
-h2{
     font-size: 40px;
 }
-#first-p{
-    color: red; 
-       
+h2{
+    font-size: 30px;
 }
+
 #links{
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
     color: rgba(139, 80, 80, 0.664);
 }
 a{
@@ -24,4 +22,8 @@ a{
 .images{
    width: 300px;
    height: 300px;
+}
+p{
+    font-size: 20px;
+    
 }
