@@ -4,7 +4,7 @@ body {
     
    }
 h1{
-    color: rgb(36, 104, 104);
+    color: rgb(2, 31, 31);
     font-size: 40px;
     border: radius 5px;
     background-color: rgb(42, 199, 152);
@@ -14,7 +14,10 @@ h2{
     border: radius 5px;
     background-color: rgb(172, 138, 169);
 }
-
+h3{
+    font-size: 27px;
+    color: rgb(3, 102, 119);
+}
 #links{
     text-align: center;
     font-size: 25px;
@@ -29,5 +32,13 @@ a{
 }
 p{
     font-size: 20px;
+    color: rgb(66, 57, 46);
+}
+.anasayfa{
+    font-size: 25px;
+    color: brown;
+}
+.about{
+    text-align: left;
     
 }
