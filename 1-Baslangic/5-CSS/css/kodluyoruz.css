@@ -5,17 +5,35 @@
 /************** Layout ************/
 body
 {
-    background-color: black;
+    background-color: rgb(35, 44, 70);
     font-family: 'Roboto', sans-serif;
-    color:blue;
     
 }
-h2{
-    color:red; 
-    font-size:74px;
-    text-transform: uppercase;
+article{
+    color: rgb(0, 0, 0);
+}
+.text-red{
+    color: red;
+   
+}
+
+.fs-30{
+    font-size: 30px;
+}
+.fs-medium{
+    text-align: center;
+}
+#first-id{
+    text-align: center;
+    font-size: 40px;
 }
 p{
-    font-family: 'Lobster', cursive;
-    font: size 30px;
+    font-size: 20px;
+}
+h1{
+    font-weight: 40px;
+    color: brown;
+}
+h2{
+    font-size: 30px;
 }
