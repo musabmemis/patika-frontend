@@ -1,3 +1,17 @@
 #logo{
+    margin: 0px 0px 0px 0px;
+    
+    padding: 0px 00px 0px 100px;
     text-align: center;
+}
+#inputs{
+    margin: 0px 0px 0px 0px;
+    float: left;
+    background-color: gainsboro;
+    padding: 0px 100px 0px 100px;
+}
+.table{
+    float: left;
+    text-align: center;
+    margin: 10px 550px 10px 550px;
 }
