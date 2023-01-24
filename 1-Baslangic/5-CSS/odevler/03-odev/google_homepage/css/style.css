@@ -48,7 +48,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
 }
 
 .search-img {
-  display: flex;
+  display: inline-block;
   align-items: center;
   padding-right: 13px;
   margin-top: -5px;
