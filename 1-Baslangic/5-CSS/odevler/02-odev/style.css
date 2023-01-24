@@ -2,23 +2,28 @@ center{
     display: block;
     text-align: -webkit-center;
 }
+
 body{
     
     margin: 8px;
     display: block;
 }
+
 font{
     font-size: -1;
 }
+
 form{
     display: block;
     margin-top: 0em;
     margin-block-end: 1em;
 }
+
 img {
     overflow-clip-margin: content-box;
     overflow: clip;
 }
+
 table {
     display: table;
     border-collapse: separate;
@@ -35,20 +40,24 @@ table {
     border-color: grey;
     font-variant: normal;
 }
+
 tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
 }
+
 tr {
     display: table-row;
     vertical-align: inherit;
     border-color: inherit;
 }
+
 td {
     display: table-cell;
     vertical-align: inherit;
 }
+
 p {
     display: block;
     margin-block-start: 1em;
@@ -56,4 +65,3 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-    
