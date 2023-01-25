@@ -8,18 +8,25 @@
   font-size: 13px;
 }
 
-.header-left {
+.header-left li{
   text-align: left;
   list-style-type: none;
   margin: 10px;
   float: left;
+  text-decoration:none
+
 }
 
 .header-left a {
   color: #5f6368;
+  text-decoration:none
 }
 
-.header-left li {
+.header-left a:hover{
+  text-decoration: underline;
+}
+
+.header-left {
   float: left;
   margin: 10px;
 }
@@ -93,14 +100,15 @@
   display: flex;
   align-items: center;
   padding-right: 13px;
-  margin-top: -5px;
+  margin-top: -6px;
+  
 }
 
 .realbox-icon-button {
   margin-top: 3px;
   margin-right: 1px;
   display: inline-block;
-  fill: currentColor;
+  fill: none;
   position: relative;
   border: 0;
 }
