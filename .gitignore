@@ -1,0 +1,14 @@
+*.jpeg
+*.png
+*.gif
+*.svg
+*.mp4
+
+
+### https://git-scm.com/docs/gitignore
+
+# sadece Odevler klasörü içindeki bütün dosyaların ignore'unu kaldırır.
+# !**/Odevler/*
+
+# Odevler klasörü ve alt klasörlerin içindeki bütün dosyaların ignore'unu kaldırır.
+!**/Odevler/**
