@@ -1,18 +1,36 @@
 .header {
   list-style-type: none;
+  text-align: right;
   margin: 10px;
   overflow: hidden;
   margin-right: 16px;
-  font-family: arial,sans-serif;
+  font-family: arial, sans-serif;
   font-size: 13px;
+}
+
+.header-left {
+  text-align: left;
+  list-style-type: none;
+  margin: 10px;
+  float: left;
+}
+
+.header-left a {
+  color: #5f6368;
+}
+
+.header-left li {
+  float: left;
+  margin: 10px;
 }
 
 .headerli a {
   display: block;
   color: black;
-  text-align: center;
   padding: 5px 5px;
   text-decoration: none;
+  float: right;
+  color: #5f6368;
 }
 
 .headerli a:hover {
@@ -22,6 +40,12 @@
 .container {
   text-align: center;
   margin: 100px;
+}
+
+.profile-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 3em;
 }
 
 .search-area {
@@ -34,10 +58,11 @@
   margin: 0 auto;
   margin-top: -77px;
   width: 582px;
+  border-radius: 10em;
 }
 
 .search-area:hover {
-box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.24), 0 2px 5px 0 rgba(0, 0, 0, 0.19);
 }
 
 .search {
@@ -61,8 +86,28 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   margin-top: 0px;
   display: inline-block;
   fill: currentColor;
-  line-height: 24px;
   position: relative;
+}
+
+.voice-button {
+  display: flex;
+  align-items: center;
+  padding-right: 13px;
+  margin-top: -5px;
+}
+
+.realbox-icon-button {
+  margin-top: 3px;
+  margin-right: 1px;
+  display: inline-block;
+  fill: currentColor;
+  position: relative;
+  border: 0;
+}
+
+.realbox-icon-button img {
+  height: 35px;
+  width: 35px;
 }
 
 .input-enter {
@@ -102,6 +147,13 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: start;
   appearance: textfield;
   cursor: text;
+  border: 0;
+  width: 480px;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 36px;
 }
 
 .googlesearch {
@@ -112,6 +164,9 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  font-size: 14px;
 }
 
 .feelinglucky {
@@ -121,6 +176,9 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   text-align: center;
   cursor: pointer;
   user-select: none;
+  border: 1px solid #f2f2f2;
+  color: #5f6368;
+  font-size: 14px;
 }
 
 .footer {
@@ -134,6 +192,7 @@ box-shadow: 0 2px 3px 0 rgba(0,0,0,0.24), 0 2px 5px 0 rgba(0,0,0,0.19);
   width: 100%;
   margin-left: -8px;
   line-height: 10px;
+  background-color: #f2f2f2;
 }
 
 .footerli {
