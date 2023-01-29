@@ -47,3 +47,11 @@ input.empty {
   text-decoration: none;
   color: lightgrey;
 }
+
+.logo{
+  margin-left: 192px;
+}
+
+.middlearea{
+  max-height: 200px !important;
+} 
