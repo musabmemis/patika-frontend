@@ -55,3 +55,7 @@ input.empty {
 .middlearea{
   max-height: 200px !important;
 } 
+
+.stick-sidebar{
+  position:sticky;
+}
