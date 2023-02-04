@@ -8,12 +8,16 @@
 // let ile değişkeni boş tanımlamak:
 let serverName;
 console.log(serverName)
+
 // let ile değişkene bilgi atamak:
 serverName = "https://kodluyoruz.org"
 console.log(serverName)
+
 // let ile değişkene bilgi atayarak tanımlamak:
 let password = "1234"
 console.log(password)
+
+
 // değişken ataması yapmadan önce kullanmaya çalışmak:
 /* HATALI KULLANIM
 let fullName = "Musab Memiş"
