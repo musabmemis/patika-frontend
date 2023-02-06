@@ -11,7 +11,7 @@ counterDOM.innerHTML = counter
 increaseDOM.addEventListener("click",clickEvent )
 decreaseDOM.addEventListener("click",clickEvent )
 
-// bu sekişle:
+// bu sekilde:
 
 // function clickEvent () {
 //     console.log(this.id)
