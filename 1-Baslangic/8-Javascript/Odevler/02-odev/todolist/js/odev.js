@@ -10,6 +10,7 @@ const idTask = document.querySelector("#task");
 function newElement() {
     if (idTask.value) {
         addItem(idTask.value)
+        idTask.value = ""
     }
 } 
 
