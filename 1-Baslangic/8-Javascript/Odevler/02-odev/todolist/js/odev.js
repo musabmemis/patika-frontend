@@ -1,4 +1,4 @@
-let listDOM = document.querySelector("ul") 
+let listDOM = document.querySelector("ul#list") 
 listDOM.addEventListener("click",listDone);
 
 function listDone(event){
@@ -8,7 +8,9 @@ function listDone(event){
 const idTask = document.querySelector("#task");
 
 function newElement() {
-    addItem(idTask.value)
+    if (idTask.value) {
+        addItem(idTask.value)
+    }
 } 
 
 const addItem = (idTask) => {
