@@ -11,6 +11,9 @@ function newElement() {
     if (idTask.value) {
         addItem(idTask.value)
         idTask.value = ""
+        console.log("başarılı")
+    }else { 
+        console.log("hatalı")
     }
 } 
 
