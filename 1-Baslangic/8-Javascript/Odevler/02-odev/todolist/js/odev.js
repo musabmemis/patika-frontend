@@ -1,61 +1,42 @@
-let listDOM = document.querySelector("ul#list");
-listDOM.addEventListener("click", listDone);
+let listDOM = document.getElementById("list");
+listDOM.addEventListener("click", (e) => e.target.classList.toggle("checked"));
 
-function listDone(event) {
-  event.target.classList.toggle("checked");
+function addCloseIcon(element) {
+  let btn = document.createElement("button");
+  btn.type = "button";
+  btn.className = "close-icon close";
+  btn.ariaLabel = "Close";
+  btn.addEventListener("click", (e) => e.target.parentElement.parentElement.remove()); // TODO removeTask ı arrow function yap. '(e) => e.target.parentElement.parentElement.remove();'
+  btn.innerHTML = `<span aria-hidden="true">&times<span/>`;
+  element.appendChild(btn);
 }
 
 let myNodeList = document.getElementsByTagName("li");
 for (let i = 0; i < myNodeList.length; i++) {
-  let btn = document.createElement("button");
-  let span = document.createElement("span");
-  btn.type = "button";
-  btn.className = "close";
-  btn.ariaLabel = "Close";
-  span.ariaHidden = "true";
-  span.innerHTML = "&times";
-  btn.appendChild(span);
-  myNodeList[i].appendChild(btn);
+  addCloseIcon(myNodeList[i]);
 }
 
-let close = document.getElementsByClassName("close");
+const idTask = document.getElementById("task");
 
-for (let i = 0; i < close.length; i++) {
-  close[i].onclick = function () {
-    let div = close[i].parentElement;
-    div.remove()
+function toastShow(className) {
+  $(document).ready($(className).toast("show"));
 }
-}
-function toastShow(str) {
-    $(document).ready(function () {
-      $(str).toast("show");
-    });
-  }
 
 function newElement() {
-    const idTask = document.querySelector("#task");
-    if (idTask.value) {
-      addItem(idTask.value);
-      idTask.value = "";
-      toastShow(".success");
-    } else {
-      toastShow(".error");
-    }
+  let txt = String(idTask.value).trim();
+  if (txt) {
+    addItem(txt);
+    idTask.value = "";
+    toastShow(".success");
+  } else {
+    toastShow(".error");
+    idTask.value = "";
   }
+}
 
 const addItem = (idTask) => {
   let liDOM = document.createElement("li");
-  liDOM.innerHTML = `${idTask}`;
+  liDOM.innerHTML = idTask;
   listDOM.append(liDOM);
-  for (let i = 0; i < myNodeList.length; i++) {
-    let btn = document.createElement("button");
-    let span = document.createElement("span");
-    btn.type = "button";
-    btn.className = "close";
-    btn.ariaLabel = "Close";
-    span.ariaHidden = "true";
-    span.innerHTML = "&times";
-    btn.appendChild(span);
-    myNodeList[i].appendChild(btn);
-  }
+  addCloseIcon(liDOM);
 };
