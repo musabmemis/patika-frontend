@@ -53,3 +53,7 @@ console.log(score1, score2, otherScore)
 // object kopyalama ile ayni... let settings2 = {...settings}
 let copyOfScore = [...score]
 console.log(copyOfScore)
+
+let person={name:"Selin",city:"Ankara",favoriteColor:"aqua blue"}; 
+let {name:foo}=person;
+console.log(foo)
