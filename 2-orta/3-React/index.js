@@ -1,14 +1,18 @@
-var slugify = require('slugify');
+// import slugify from "slugify";
+// const title = slugify("some string");
+// const den = slugify("Her nefis ölümü tadacaktır.")
+// const ben = slugify("Bir gün mutlaka ", "!")
 
-const title = slugify("some string");
+// console.log(title);
+// console.log(den);
+// console.log(ben);
+// console.log("deneme");
 
-const den = slugify("Her nefis ölümü tadacaktır.")
+import hello, { topla, cikar, user, text, users } from "./my-module.js";
 
-const ben = slugify("Bir gün mutlaka ", "!")
-
-console.log(title);
-console.log(den);
-console.log(ben);
-
-
-console.log("deneme");
+console.log(topla(2, 4));
+console.log(cikar(4, 2));
+console.log(text);
+console.log(user);
+console.log(users);
+hello("memo");
