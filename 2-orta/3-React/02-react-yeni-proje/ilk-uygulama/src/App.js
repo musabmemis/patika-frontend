@@ -1,19 +1,36 @@
 import "./App.css";
 
-import Header from "./components/Header";
+import User from "./components/User";
 
-const name = "Musab";
-const surname = "Memiş";
-const isLoggedIn = true;
+const friends = [
+  { 
+    id:1,
+    name: "Ahmet" 
+  },
+  { 
+    id:2,
+    name: "Tayfun" 
+  },
+  { 
+    id:3,
+    name: "Gökhan" 
+  }
+];
 
 function App() {
   return (
     <>
-      <h1>
-        {isLoggedIn
-          ? `Benim adım ${name}, soyadım ${surname}.`
-          : "Giriş yapmadınız"}
-      </h1>
+      <User
+        // name="Musab"
+        surname="Memiş"
+        isLoggedIn={true}
+        age={29}
+        friends={friends}
+        address= {{
+          title: 'Ataşehir/Istanbul',
+          zip: 34755
+        }}
+      />
     </>
   );
 }
