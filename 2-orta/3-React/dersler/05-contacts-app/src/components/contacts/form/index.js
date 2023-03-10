@@ -42,8 +42,8 @@ function Form({ addContact, contacts }) {
           onChange={onChangeInput}
         />
       </div>
-      <div >
-        <button>Add</button>
+      <div className="btn" >
+        <button >Add</button>
       </div>
     </form>
   );
