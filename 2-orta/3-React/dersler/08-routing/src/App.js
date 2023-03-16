@@ -8,13 +8,13 @@ import About from "./components/About";
 import Home from "./components/Home";
 import Users from "./components/Users";
 import "./App.css";
-// import Error404 from "./components/Error404";
-// import User from "./components/User";
+import Error404 from "./components/Error404";
+import User from "./components/User";
 
 function App() {
   const activeStyle = {
-    // textDecoration: "underline",
-    // backgroundColor: "red",
+    textDecoration: "underline",
+    backgroundColor: "red",
   };
 
   const activeClassName = "underline";
@@ -29,10 +29,10 @@ function App() {
                 to="/"
                 style={({ isActive }) => {
                   return {
-                    // display: "block",
-                    // margin: isActive ? "10px 0px" : "",
-                    // color: "red",
-                    // backgroundColor: isActive ? "blue" : "",
+                    display: "block",
+                    margin: isActive ? "10px 0px" : "",
+                    color: "red",
+                    backgroundColor: isActive ? "blue" : "",
                   };
                 }}
               >
@@ -73,9 +73,9 @@ function App() {
           <Route path="/" index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="users/*" element={<Users />}>
-            {/* <Route path={":id"} element={<User />} /> */}
+            <Route path={":id"} element={<User />} />
           </Route>
-          {/* <Route path="*" element={<Error404 />} /> */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </div>
     </Router>
