@@ -1,10 +1,15 @@
-import React from 'react'
+import React from "react";
 
-function Header({number}) {
-    console.log("Header component re-rendered");
+function Header({ number, increment }) {
+  console.log("Header component re-rendered");
   return (
-    <div>Header - {number}</div>
-  )
+    <div>
+      Header - {number}
+      <br />
+      <br />
+      <button onClick={increment}>Click</button>
+    </div>
+  );
 }
 
-export default React.memo(Header)
+export default React.memo(Header);
