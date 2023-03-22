@@ -1,11 +1,10 @@
 import { useTheme } from "../context/ThemeContext";
 
-function Button() {
+function Header() {
   const { theme, setTheme } = useTheme();
   return (
     <div>
-      Active theme - {theme}
-      <br />
+      Active theme {theme} from header
       <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
         Change Theme
       </button>
@@ -13,4 +12,4 @@ function Button() {
   );
 }
 
-export default Button;
+export default Header;
