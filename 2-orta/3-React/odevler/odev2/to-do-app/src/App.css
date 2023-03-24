@@ -1,39 +1,75 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todos-text {
+  font-size: 100px;
+  color: rgba(175, 47, 47, 0.15);
+  margin: 0;
+  font-weight: 400;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.notebookContainer {
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.inputContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.inputContainer > input {
+  width: 100%;
+  height: 3rem;
+  border-bottom: 1px rgb(212, 212, 212, 0.5) solid;
+  font-size: 20px;
+  text-indent: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+::placeholder {
+  color: rgb(134, 131, 131);
+  opacity: 0.5;
+  font-size: larger;
+  font-style: italic;
+}
+
+.enterItemInput {
+  border: none;
+}
+
+.enterItemInput:focus {
+  outline-offset: 0px;
+  outline: none;
+}
+
+.markAllCompleted {
+  transform: rotate(90deg);
+  border: none;
+  background-color: inherit;
+  font-size: 20px;
+  margin-right: 12px;
+  color: #cc9a9a;
+  transition: color 0.3s ease-out;
+  position: absolute;
+  left: 18px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
+.markAllCompleted:hover {
+  color: #af5b5e;
+}
+
+@media (max-width: 1024px) {
+  .inputContainer > input {
+    margin-bottom: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  .markAllCompleted {
+    left: 0;
+    margin-top: 15px;
   }
 }
-  
