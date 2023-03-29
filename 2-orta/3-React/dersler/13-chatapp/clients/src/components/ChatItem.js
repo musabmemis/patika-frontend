@@ -1,7 +1,7 @@
-import  "./styles.modules.css";
+import styles from  "./styles.modules.css";
 function ChatItem({item}) {
   return (
-    <div className='chatItem'>
+    <div className={`chatItem ${item.fromMe ? styles.ChatItemright : ""}`}>
         {item.message}
     </div>
   )
