@@ -12,3 +12,5 @@
 
 # Odevler klasörü ve alt klasörlerin içindeki bütün dosyaların ignore'unu kaldırır.
 !**/Odevler/**
+
+**.vscode
