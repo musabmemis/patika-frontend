@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ExampleComponent } from 'renter'
+import  ExampleComponent  from '../src/index'
 import 'renter/dist/index.css'
 
 const App = () => {
