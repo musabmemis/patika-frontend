@@ -28,7 +28,7 @@ describe("Counter Tests", () => {
   test("increase btn", () => {
     userEvent.click(increaseBtn);
     expect(count).toHaveTextContent("1");
-  });
+  }); 
 
   test("decrease btn", () => {
     userEvent.click(decreaseBtn);
